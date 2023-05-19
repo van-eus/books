@@ -1,0 +1,159 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+   background-image: url(./images/Aesthetic\ Butterfly\ Wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:0 8%;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(15, 12, 12);
+    font-size: 17px;
+
+}
+nav ul li a:hover{
+text-decoration-line: underline;
+size: 15px;
+}
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: black;
+    font-size: 80px;
+}
+/* p{
+    color: black;
+    font-size: 11px;
+    linght: 18px;e-hei
+} */
+button{
+    width: 180px;
+    color: white;
+    font-size: 12px;
+    padding: 12px 0;
+    background: black;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+button:hover{
+    background: yellowgreen;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+  
+
+}
+.card1{
+    background-image: url(./images/Princess\ of\ Secrets.jpg);
+}
+.card2{
+    background-image: url(./images/sa.jpg);
+}
+.card3{
+    background-image: url(./images/q2\ \(4\).jfif);
+}
+.card4{
+    background-image: url(./images/q2\ \(3\).jfif);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h3{
+    color: black;
+    text-shadow: 0 0 5px rgb(9, 7, 7);
+}
+.card p{
+    text-shadow: 0 0 5px black;  
+}
+
+
+.drip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.drip-container span {
+    position: relative;
+    display: inline-block;
+    animation: drop 0.5s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+    animation-delay: calc(var(--drip-delay) * -0.8s);
+}
+
+.drip-container span:before {
+    content: attr(data-letter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    text-shadow: 0 0 black;
+    opacity: 0.2;
+    filter: blur(2px);
+    transform: translate3d(0, -10px, 0);
+    transition: opacity 0.8s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.drip-container span:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes drop {
+    0% {
+        transform: scaleY(1) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: scaleY(2) translate3d(0, 10px, 0);
+    }
+}

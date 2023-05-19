@@ -1,0 +1,72 @@
+
+#p{
+   text-align: justify; 
+   font-size: large;
+   line-height: 28px;
+   padding:0 70px 10px 70px;
+   user-select: none;
+}
+h1{
+    text-align: center;
+    
+    font-size: 45px;
+    font-style: italic;
+    transition: font-size 1s;
+
+}
+.part4{
+  opacity: 0.1;
+}
+span{
+    opacity: 0.7;
+}
+#navbar{
+ background-color: tomato; 
+ padding: 10px 30px;
+ position: sticky;
+}
+#footer{
+    background-color: tomato; 
+ padding: 10px 30px;
+ position: sticky;
+}
+ul li{
+    display: inline;
+    padding: 60px;
+    color: azure;
+    font-size: 20px;
+    
+}
+.part3{
+  opacity: 0.4;
+}
+
+.bar{
+    background-color: whitesmoke;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 30px;
+        
+}
+
+button{
+    margin-left: 500px;
+    padding:20px 70px;
+    border-radius: 3px;
+    
+    background-color: rgba(255, 99, 71, 0.916);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
